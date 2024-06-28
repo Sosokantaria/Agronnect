@@ -1,7 +1,7 @@
 <template>
-  <div class="w-[300px] rounded-[12px] h-[95.5vh] ml-[10px] bg-teal-dark">
+  <div class="w-[300px] laptop:min-w-[300px] rounded-[12px] h-[95.5vh] ml-[10px] bg-teal-dark">
     <div
-      class="flex w-[100%] justify-center items-center gap-3 text-white h-[68px]"
+      class="flex w-[100%] justify-center items-center gap-3 text-white h-[68px] cursor-default"
     >
       <img
         src="../assets/logo/telagriLogo.png"
@@ -11,10 +11,10 @@
       <h1 class="font-[400] text-2xl tracking-wide">TELAGRI</h1>
     </div>
     <hr class="text-white w-[87%] mx-auto" />
-    <div class="w-[87%] mx-auto mt-[29px] flex flex-col justify-center gap-3">
+    <div class="w-[87%] mx-auto mt-[29px] flex flex-col justify-center gap-2.5">
       <router-link
         to="./"
-        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-4"
+        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
       >
         <v-icon
           name="md-dashboard-sharp"
@@ -25,7 +25,7 @@
       >
       <router-link
         :to="{ name: 'MyFarm' }"
-        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-4"
+        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
         ><v-icon
           name="md-homework-outlined"
           class="text-white w-[24px] h-[24px]"
@@ -35,9 +35,9 @@
       >
       <router-link
         :to="{ name: 'FindSpecialists' }"
-        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-4"
+        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
         ><v-icon
-          name="ri-finder-line"
+          name="ri-user-search-line"
           class="text-white w-[24px] h-[24px]"
         /><span class="font-[400] text-lg text-white"
           >Find Spacialists</span
@@ -45,7 +45,7 @@
       >
       <router-link
         :to="{ name: 'Offers' }"
-        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-4"
+        class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
         ><v-icon
           name="bi-arrow-right-circle"
           class="text-white w-[24px] h-[24px]"
@@ -53,7 +53,7 @@
       >
       <router-link
         :to="{ name: 'Chat' }"
-        class="nav-link h-[47px] rounded-[4px] flex items-center pl-4 gap-4"
+        class="nav-link h-[47px] rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
       >
         <v-icon
           name="hi-solid-chat-alt-2"

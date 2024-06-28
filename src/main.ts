@@ -7,15 +7,21 @@ import {
   MdDashboardSharp,
   MdHomeworkOutlined,
   BiArrowRightCircle,
-  RiFinderLine,
   HiSolidChatAlt2,
+  FaRegularBell,
+  MdChevronrightSharp,
+  IoPersonCircleSharp,
+  RiUserSearchLine,
 } from "oh-vue-icons/icons";
 addIcons(
   MdDashboardSharp,
   MdHomeworkOutlined,
   BiArrowRightCircle,
-  RiFinderLine,
-  HiSolidChatAlt2
+  HiSolidChatAlt2,
+  FaRegularBell,
+  MdChevronrightSharp,
+  IoPersonCircleSharp,
+  RiUserSearchLine,
 );
 
 createApp(App).use(router).component("v-icon", OhVueIcon).mount("#app");
