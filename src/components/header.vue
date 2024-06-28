@@ -1,26 +1,28 @@
 <template>
-  <div class="flex justify-between w-[100%]">
-    <div>
-      <div class="hidden md:flex h-[7vh] items-center pl-11 gap-2">
-        <v-icon name="md-chevronright-sharp" class="text-teal-lite" />
-        <span class="text-3xl font-[700] tracking-wide leading-[39.57px]">{{
-          route.name
-        }}</span>
+  <div
+    class="flex justify-between fixed laptop:static md:w-[100%] left-0 right-0 top-3"
+  >
+    <div class="h-[7vh] flex items-center pl-3  md:pl-11 md:gap-2">
+      <div class="text-teal-lite hidden laptop:flex ml-2">
+        <v-icon name="md-chevronright-sharp" />
       </div>
       <span
-        class="text-black mt-1 text-xl font-[700] tracking-tight flex md:hidden"
+        class="hidden laptop:flex text-3xl font-[700] tracking-wide leading-[39.57px]"
+        >{{ $route.name }}</span
+      >
+      <span class="text-black text-xl font-[700] tracking-tight flex md:hidden"
         >Hi, Andrea</span
       >
     </div>
-    <div class="flex gap-3 h-[47px] tablet:divide-x-2 divide-gray-lite">
+    <div class="flex gap-3 h-[47px] pr-3 md:pr-0 tablet:divide-x-2 divide-gray-lite">
       <div class="h-[45px] flex items-center relative">
         <v-icon
           name="fa-regular-bell"
-          class="flex mr-5 mt-3 h-[24px] static text-gray-dark"
+          class="flex mr-5 h-[24px] static text-gray-dark"
         />
         <div
           v-if="activities > 0"
-          class="flex justify-center text-[10px] text-white font-[700] items-center rounded-[19px] w-[28px] h-[18px] absolute top-[11px] left-[9px] bg-red"
+          class="flex justify-center text-[10px] text-white font-[700] items-center rounded-[19px] w-[28px] h-[18px] absolute top-[9px] left-[9px] bg-red"
         >
           {{ activities }}
         </div>
@@ -50,22 +52,20 @@
       </div>
     </div>
   </div>
-  <div class="md:hidden flex h-[7vh] items-center pl-11 gap-2">
+  <div class="laptop:hidden flex h-[7vh] items-center mt-[7vh] md:pl-11 gap-2">
     <v-icon name="md-chevronright-sharp" class="text-teal-lite" />
     <span class="text-3xl font-[700] tracking-wide leading-[39.57px]">{{
-      route.name
+      $route.name
     }}</span>
   </div>
 </template>
 
 <script lang="ts" >
 import { ref } from "vue";
-import { useRoute } from "vue-router";
 export default {
   setup() {
     let activities = ref<number>(11).value;
-    let route = useRoute();
-    return { route, activities };
+    return { activities };
   },
 };
 </script>
