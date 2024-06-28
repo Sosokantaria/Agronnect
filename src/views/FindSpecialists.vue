@@ -1,3 +1,10 @@
 <template>
-    find Specialists
 </template>
+
+<script>
+export default {
+};
+</script>
+
+<style>
+</style>
