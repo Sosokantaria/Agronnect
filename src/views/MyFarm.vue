@@ -1,5 +1,5 @@
 <template>
-  <div v-if="componentView === 'register'" class="w-full h-full">
+  <div v-if="componentView === 'register'" >
     <RegisterNewCrop @handleAddCrop="handleAddCrop" />
   </div>
   <div v-else-if="componentView === 'selection'" >
@@ -9,10 +9,13 @@
     />
   </div>
   <div v-else-if="componentView === 'additional'">
-    <AdditionalInformation />
+    <AdditionalInformation
+      @handleClickPrev="handleClickPrev"
+      @handleClickNext="handleClickNext"
+    />
   </div>
-  <div v-else-if="componentView === 'list'">
-    <ListCrops />
+  <div v-else-if="componentView === 'list'" >
+    <ListCrops @handleAddCrop="handleAddCrop" />
   </div>
 </template>
 
@@ -28,7 +31,7 @@ const CropSelection = defineAsyncComponent(() =>
   import("../components/MyFarm/cropSelection/CropSelection.vue")
 );
 const AdditionalInformation = defineAsyncComponent(() =>
-  import("../components/MyFarm/AdditionalInformation.vue")
+  import("../components/MyFarm/additionalInfo/AdditionalInformation.vue")
 );
 
 export default {

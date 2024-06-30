@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[100%] h-[100%] flex flex-col justify-center items-center text-center text-black gap-10"
+    class="flex flex-col justify-center items-center mt-[100px] text-center text-black gap-10"
   >
     <h2 class="font-[700] text-[20px] leading-[23.44px] text-black">
       Register The Crops of Your Farm

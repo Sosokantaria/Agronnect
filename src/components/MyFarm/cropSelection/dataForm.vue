@@ -1,5 +1,7 @@
 <template>
-  <div class="max-w-[470px] mobile:mx-auto mobile:px-[10px] tablet:px-0 text-center h-full my-auto flex flex-col justify-center items-center gap-6">
+  <div
+    class="max-w-[470px] mobile:mx-auto mobile:px-[10px] tablet:px-0 text-center h-full mt-[40px] flex flex-col justify-center items-center gap-6"
+  >
     <h2 class="font-[700] text-[20px] leading-[28px]">
       Let's select the crop you cultivate on your farm
     </h2>
@@ -104,10 +106,6 @@ select:focus + span,
 .filled {
   top: -10px;
   font-size: 12px;
-}
-
-input + span,
-select + span {
   transition: all 0.3s ease;
 }
 </style>
