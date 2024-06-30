@@ -1,10 +1,12 @@
 <template>
-  <div class="w-[300px] laptop:min-w-[300px] rounded-[12px] h-[95.5vh] ml-[10px] bg-teal-dark">
+  <div
+    class="w-[300px] laptop:min-w-[300px] rounded-[12px] h-[95.5vh] ml-[10px] bg-teal-dark"
+  >
     <div
       class="flex w-[100%] justify-center items-center gap-3 text-white h-[68px] cursor-default"
     >
       <img
-        src="../assets/logo/telagriLogo.png"
+        src="../assets/icons/logo/telagriLogo.png"
         alt="telagri logo"
         class="h-[28.94px] w-[28.94px]"
       />
@@ -16,8 +18,9 @@
         to="./"
         class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
       >
-        <v-icon
-          name="md-dashboard-sharp"
+        <img
+          src="../assets/icons/view-dashboard-outline.svg"
+          alt="dashboard"
           class="text-white w-[24px] h-[24px]"
         /><span class="font-[400] text-lg text-white"
           >Dashboard</span
@@ -26,8 +29,9 @@
       <router-link
         :to="{ name: 'MyFarm' }"
         class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
-        ><v-icon
-          name="md-homework-outlined"
+        ><img
+          src="../assets/icons/home-silo.svg"
+          alt="home silo"
           class="text-white w-[24px] h-[24px]"
         /><span class="font-[400] text-lg text-white"
           >My Farm</span
@@ -46,8 +50,7 @@
       <router-link
         :to="{ name: 'Offers' }"
         class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
-        ><v-icon
-          name="bi-arrow-right-circle"
+        ><img src="../assets/icons/arrow-right-bold-circle-outline.svg" alt="arrow right"
           class="text-white w-[24px] h-[24px]"
         /><span class="font-[400] text-lg text-white">Offers</span></router-link
       >
@@ -55,8 +58,7 @@
         :to="{ name: 'Chat' }"
         class="nav-link h-[47px] rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
       >
-        <v-icon
-          name="hi-solid-chat-alt-2"
+        <img src="../assets/icons/forum-outline.svg" alt="forum"
           class="text-white w-[24px] h-[24px]"
         /><span class="font-[400] text-lg text-white">Chat</span></router-link
       >

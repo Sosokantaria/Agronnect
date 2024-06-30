@@ -12,7 +12,6 @@ const routes: Array<RouteRecordRaw> = [
     name: "MyFarm",
     component: () =>
       import(/* webpackChunkName: 'MyFarm' */ "../views/MyFarm.vue"),
-    
   },
   {
     path: "/FindSpecialists",
@@ -22,7 +21,6 @@ const routes: Array<RouteRecordRaw> = [
         /* webpackChunkName: 'FindSpecialists' */ "../views/FindSpecialists.vue"
       ),
   },
-
   {
     path: "/Offers",
     name: "Offers",
