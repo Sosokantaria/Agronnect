@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        mobile:"400px",
         tablet: "790px",
         md: "900px",
         laptop: "1130px",
@@ -14,7 +15,7 @@ module.exports = {
         gray: {
           dark: "rgba(123, 128, 154, 1)",
           lite: "rgba(233, 236, 239, 1)",
-          bgdark:"rgba(248, 249, 250, 1)"
+          bgdark: "rgba(248, 249, 250, 1)",
         },
         black: "rgba(52, 58, 64, 1)",
         white: "rgba(255, 255, 255, 1)",
@@ -22,6 +23,7 @@ module.exports = {
         teal: {
           dark: "rgba(3, 136, 119, 1)",
           lite: "rgba(0, 171, 137, 1)",
+          liter: "rgba(179, 219, 214, 1)",
         },
         red: "rgba(253, 51, 51, 1)",
       },

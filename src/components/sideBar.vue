@@ -4,7 +4,7 @@
       class="flex w-[100%] justify-center items-center gap-3 text-white h-[68px] cursor-default"
     >
       <img
-        src="../assets/logo/telagriLogo.png"
+        src="../assets/icons/logo/telagriLogo.png"
         alt="telagri logo"
         class="h-[28.94px] w-[28.94px]"
       />

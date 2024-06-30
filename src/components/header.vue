@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="flex justify-between fixed laptop:static md:w-[100%] left-0 right-0 top-3"
-  >
-    <div class="h-[7vh] flex items-center pl-3  md:pl-11 md:gap-2">
+  <div class="flex justify-between w-full">
+    <div class="h-[7vh] flex items-center pl-3 md:pl-11 md:gap-2">
       <div class="text-teal-lite hidden laptop:flex ml-2">
         <v-icon name="md-chevronright-sharp" />
       </div>
@@ -14,7 +12,9 @@
         >Hi, Andrea</span
       >
     </div>
-    <div class="flex gap-3 h-[47px] pr-3 md:pr-0 tablet:divide-x-2 divide-gray-lite">
+    <div
+      class="flex gap-3 h-[47px] pr-3 md:pr-0 tablet:divide-x-2 divide-gray-lite"
+    >
       <div class="h-[45px] flex items-center relative">
         <v-icon
           name="fa-regular-bell"
@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="laptop:hidden flex h-[7vh] items-center mt-[7vh] md:pl-11 gap-2">
+  <div class="laptop:hidden flex h-[7vh] items-center  md:pl-11 gap-2">
     <v-icon name="md-chevronright-sharp" class="text-teal-lite" />
     <span class="text-3xl font-[700] tracking-wide leading-[39.57px]">{{
       $route.name

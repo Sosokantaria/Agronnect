@@ -12,6 +12,9 @@ import {
   MdChevronrightSharp,
   IoPersonCircleSharp,
   RiUserSearchLine,
+  PxPlus,
+  FaCheckCircle,
+  FaCircle
 } from "oh-vue-icons/icons";
 addIcons(
   MdDashboardSharp,
@@ -22,6 +25,9 @@ addIcons(
   MdChevronrightSharp,
   IoPersonCircleSharp,
   RiUserSearchLine,
+  PxPlus,
+  FaCheckCircle,
+  FaCircle
 );
 
 createApp(App).use(router).component("v-icon", OhVueIcon).mount("#app");

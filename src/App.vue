@@ -1,13 +1,15 @@
 <template>
-  <div class="flex h-[100vh] w-[100vw] p-[21px]">
-    <div class="hidden md:flex w-[300px]"><SideBar /></div>
-    <div class="flex-grow flex flex-col justify-between">
-      <Header />
-      <div class="md:hidden">
-        <FooterBar />
-        </div>
+  <div class="flex flex-col h-[100vh] w-[100%] justify-between">
+    <div class="flex m-[21px]">
+      <div class="hidden md:flex w-[300px]"><SideBar /></div>
+      <div class="flex-grow">
+        <Header />
+        <router-view />
+      </div>
     </div>
-    <router-view />
+    <div class="md:hidden w-full">
+      <FooterBar />
+    </div>
   </div>
 </template>
 

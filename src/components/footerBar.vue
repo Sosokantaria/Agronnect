@@ -1,6 +1,3 @@
-
-
-
 <template>
   <div class="left-0 right-0 bottom-0 fixed h-[66px] grid grid-cols-5 bg-white shadow-[rgba(0,0,0,0.1)_0px_0px_10px_0]">
     <router-link
