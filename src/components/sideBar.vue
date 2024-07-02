@@ -10,7 +10,7 @@
         alt="telagri logo"
         class="h-[28.94px] w-[28.94px]"
       />
-      <h1 class="font-[400] text-2xl tracking-wide">TELAGRI</h1>
+      <h1 class="font-[400] text-xl tracking-wide">TELAGRI</h1>
     </div>
     <hr class="text-white w-[87%] mx-auto" />
     <div class="w-[87%] mx-auto mt-[29px] flex flex-col justify-center gap-2.5">
@@ -22,7 +22,7 @@
           src="../assets/icons/view-dashboard-outline.svg"
           alt="dashboard"
           class="text-white w-[24px] h-[24px]"
-        /><span class="font-[400] text-lg text-white"
+        /><span class="font-[400] text-xl text-white"
           >Dashboard</span
         ></router-link
       >
@@ -33,40 +33,44 @@
           src="../assets/icons/home-silo.svg"
           alt="home silo"
           class="text-white w-[24px] h-[24px]"
-        /><span class="font-[400] text-lg text-white"
+        /><span class="font-[400] text-xl text-white"
           >My Farm</span
         ></router-link
       >
       <router-link
         :to="{ name: 'FindSpecialists' }"
         class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
-        ><v-icon
-          name="ri-user-search-line"
+        ><img
+          src="../assets/icons/account-search-outline 1.svg"
           class="text-white w-[24px] h-[24px]"
-        /><span class="font-[400] text-lg text-white"
+        /><span class="font-[400] text-xl text-white"
           >Find Spacialists</span
         ></router-link
       >
       <router-link
         :to="{ name: 'Offers' }"
         class="h-[47px] nav-link rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
-        ><img src="../assets/icons/arrow-right-bold-circle-outline.svg" alt="arrow right"
+        ><img
+          src="../assets/icons/arrow-right-bold-circle-outline.svg"
+          alt="arrow right"
           class="text-white w-[24px] h-[24px]"
-        /><span class="font-[400] text-lg text-white">Offers</span></router-link
+        /><span class="font-[400] text-xl text-white">Offers</span></router-link
       >
       <router-link
         :to="{ name: 'Chat' }"
         class="nav-link h-[47px] rounded-[4px] flex items-center pl-4 gap-5 tracking-tighter"
       >
-        <img src="../assets/icons/forum-outline.svg" alt="forum"
+        <img
+          src="../assets/icons/forum-outline.svg"
+          alt="forum"
           class="text-white w-[24px] h-[24px]"
-        /><span class="font-[400] text-lg text-white">Chat</span></router-link
+        /><span class="font-[400] text-xl text-white">Chat</span></router-link
       >
     </div>
   </div>
 </template>
 
-<style scoped >
+<style scoped>
 .nav-link.router-link-active {
   background-color: rgba(0, 171, 137, 1);
 }
