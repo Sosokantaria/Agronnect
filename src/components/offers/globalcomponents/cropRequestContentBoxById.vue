@@ -1,8 +1,6 @@
 <template>
-  <div class="flex flex-col " 
-  
-  >
-    <hr class="w-full" />
+  <div class="flex flex-col">
+    <hr class="w-full h-full" />
     <div
       @click="toggleShow"
       class="min-h-[80px] w-full flex justify-start items-center cursor-pointer bg-gray-bgdark"
@@ -30,20 +28,21 @@
         <span class="ml-3 text-base text-gray-dark">{{ subtitle }}</span>
       </div>
     </div>
-    <div v-if="isShow" name="slide-fade">
-      <div class="w-full bg-gray-liter h-[100px]">
-        <singleRequestContainer
-          v-for="(req,index) in reqArr"
-          :key="index"
-          :img="req.img"
-          :index="index"
-          :currentRequestId="req.currentRequestId"
-          :flagImg="req.flagImg"
-          :durationTime="req.durationTime"
-          :location="req.location"
-          :name="req.name"
-        />
-      </div>
+    <div v-if="isShow">
+      <singleRequestContainer
+        v-for="(req, index) in reqArr"
+        :key="index"
+        :title="title"
+        :id="id"
+        :img="req.img"
+        :index="index"
+        :currentRequestId="id"
+        :flagImg="req.flagImg"
+        :durationTime="req.durationTime"
+        :location="req.location"
+        :name="req.name"
+        @hendelViewDetails="hendelViewDetails"
+      />
     </div>
 
     <hr class="w-full" />
@@ -76,11 +75,14 @@ export default defineComponent({
       default: () => [],
     },
   },
-  setup(props) {
+  setup(props, { emit }) {
     const isShow = ref(false);
 
     const toggleShow = () => {
       isShow.value = !isShow.value;
+    };
+    const hendelViewDetails = (payload: string) => {
+      emit("hendelViewDetails", payload);
     };
 
     return {
@@ -91,6 +93,7 @@ export default defineComponent({
       urgent: props.urgent,
       subtitle: props.subtitle,
       reqArr: props.reqArr,
+      hendelViewDetails,
     };
   },
 });

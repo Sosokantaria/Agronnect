@@ -18,7 +18,7 @@
     <div
       v-for="crop in cropsArr"
       :key="crop.id"
-      class="w-[330px] mx-auto  h-[170px] relative rounded-xl bg-white flex flex-col justify-between items-center  shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
+      class="w-[335px] mx-auto  h-[180px] relative rounded-xl bg-white flex flex-col justify-between items-center  shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
     >
       <div class="flex absolute top-[-20px] w-[93%] justify-between left-4">
         <div class="flex items-center justify-center gap-2">

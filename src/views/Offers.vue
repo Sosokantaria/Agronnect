@@ -3,8 +3,12 @@
     <NotNewOffers @handleViewArchive="handleViewArchive" />
   </div>
   <div v-else-if="componentView === 'newOffers'"><NewOffers /></div>
-  <div v-else-if="componentView === 'archive'"><Archive /></div>
-  <div v-else-if="componentView === 'viewRequest'"><ViewRequest /></div>
+  <div v-else-if="componentView === 'archive'" class="h-full md:h-[78vh] ">
+    <Archive @hendelViewDetails="hendelViewDetails" />
+  </div>
+  <div v-else-if="componentView === 'viewRequest'">
+    <ViewRequest :viewRequestData="viewRequestData" @handleBackToOffers="handleBackToOffers" />
+  </div>
 </template>
 
 <script>
@@ -25,15 +29,29 @@ const ViewRequest = defineAsyncComponent(() =>
 
 export default {
   components: { NotNewOffers, NewOffers, Archive, ViewRequest },
-  setup() {
+  setup(props, { emit }) {
     let newOffers = ref(false);
     let componentView = ref(newOffers.value ? "newOffers" : "notNewOffers");
 
     const handleViewArchive = (msg) => {
       componentView.value = msg;
     };
-
-    return { componentView, handleViewArchive };
+    let viewRequestData = ref();
+    const hendelViewDetails = (payload) => {
+      viewRequestData.value = payload.data;
+      componentView.value = payload.msg;
+    };
+    const handleBackToOffers =(msg)=>{
+      componentView.value = msg;
+    }
+    // componentView.value="viewRequest"
+    return {
+      componentView,
+      handleViewArchive,
+      hendelViewDetails,
+      viewRequestData,
+      handleBackToOffers
+    };
   },
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col h-full w-full justify-between">
-    <div class="flex m-[21px]">
-      <div class="hidden md:flex w-[300px]"><SideBar /></div>
-      <div class="flex-grow">
+    <div class="flex">
+      <div class="hidden md:flex w-[300px] mt-[21px] "><SideBar /></div>
+      <div  class="w-full md:flex-grow  px-[21px] md:px-0 md:pr-[21px] mb-[66px] md:ml-2">
         <Header />
         <router-view />
       </div>
@@ -29,6 +29,6 @@ export default {
   background: rgba(255, 255, 255, 1);
 }
 .flex-grow {
-  width: calc(100vw - 300px);
+  width: calc(100vw - 342px);
 }
 </style>

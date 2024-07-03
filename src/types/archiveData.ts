@@ -4,7 +4,7 @@ interface archiveDateSingleRequest {
   location: String;
   durationTime: String;
   flagImg: String;
-  currentRequestId: String;
+  currentRequestId: number;
 }
 interface archiveDateRequests {
   id: String;

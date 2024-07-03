@@ -70,6 +70,8 @@
   </div>
 </template>
 
+
+
 <style scoped>
 .nav-link.router-link-active {
   background-color: rgba(0, 171, 137, 1);
