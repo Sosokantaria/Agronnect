@@ -12,7 +12,7 @@
       /></router-link>
     </div>
     <div
-      :class="computedClass"
+      :class="computedClassTwo"
       class="flex justify-center tablet:justify-between flex-col tablet:flex-row w-[50%] p-2 tablet:w-[75%]"
     >
       <div
@@ -126,12 +126,20 @@ export default defineComponent({
     }
     const computedClass = computed(() => {
       return newRequest.value
-        ? "bg-teal-litest"
+        ? "bg-teal-100"
+        : (props.index ?? 0) % 2 === 0
+        ? "bg-bgdark"
+        : "bg-white tablet:bg-gray-bgdark";
+    });
+      const computedClassTwo = computed(() => {
+      return newRequest.value
+        ? "bg-teal-100"
         : (props.index ?? 0) % 2 === 0
         ? "bg-white"
         : "bg-gray-bgdark";
     });
-
+    
+    
     const hendelViewDetails = () => {
       const payload = {
         msg: "viewRequest",
@@ -178,6 +186,7 @@ export default defineComponent({
       newRequest,
       hendelViewDetails,
       computedClass,
+      computedClassTwo
     };
   },
 });
