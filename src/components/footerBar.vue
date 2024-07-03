@@ -10,7 +10,7 @@
         src="../assets/icons/view-dashboard-outline.svg"
         alt="dashboard"
         class="w-[24px] h-[24px] img-default"
-      /><span class="font-[400] text-[12px]">Dashboard</span></router-link
+      /><span class="font-[400] text-sm">Dashboard</span></router-link
     >
 
     <router-link
@@ -20,19 +20,20 @@
         src="../assets/icons/home-silo.svg"
         alt="home silo"
         class="w-[24px] h-[24px] img-default"
-      /><span class="font-[400] text-[12px]">My Farm</span></router-link
+      /><span class="font-[400] text-sm">My Farm</span></router-link
     >
     <div class="relative">
       <router-link
         :to="{ name: 'FindSpecialists' }"
         class="nav-link-find shadow-[rgba(0,0,0,0.2)_0_4px_10px_4px] top-[-9px] rounded-[15px] h-[66px] absolute w-[20vw] flex flex-col bg-teal-lite items-center justify-center tracking-tighter"
         ><div class="flex items-center gap-2">
-          <v-icon name="ri-user-search-line" class="w-[24px] h-[24px]" /><span
-            class="font-[400] text-[12px]"
+          <img
+          src="../assets/icons/account-search-outline 1.svg" class="w-[24px] h-[24px]" /><span
+            class="font-[400] text-sm"
             >Find
           </span>
         </div>
-        <span class="font-[400] text-[12px]"> Spacialists</span></router-link
+        <span class="font-[400] text-sm"> Spacialists</span></router-link
       >
     </div>
 
@@ -43,7 +44,7 @@
         src="../assets/icons/arrow-right-bold-circle-outline.svg"
         alt="arrow right"
         class="w-[24px] h-[24px] img-default"
-      /><span class="font-[400] text-[12px]">Offers</span></router-link
+      /><span class="font-[400] text-sm">Offers</span></router-link
     >
 
     <router-link
@@ -54,7 +55,7 @@
         src="../assets/icons/forum-outline.svg"
         alt="forum"
         class="w-[24px] h-[24px] img-default"
-      /><span class="font-[400] text-[12px]">Chat</span></router-link
+      /><span class="font-[400] text-sm">Chat</span></router-link
     >
   </div>
 </template>

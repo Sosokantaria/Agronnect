@@ -1,21 +1,23 @@
 <template>
-  <div v-if="componentView === 'register'" >
-    <RegisterNewCrop @handleAddCrop="handleAddCrop" />
-  </div>
-  <div v-else-if="componentView === 'selection'" >
-    <CropSelection
-      @handleClickPrev="handleClickPrev"
-      @handleClickNext="handleClickNext"
-    />
-  </div>
-  <div v-else-if="componentView === 'additional'">
-    <AdditionalInformation
-      @handleClickPrev="handleClickPrev"
-      @handleClickNext="handleClickNext"
-    />
-  </div>
-  <div v-else-if="componentView === 'list'" >
-    <ListCrops @handleAddCrop="handleAddCrop" />
+  <div >
+    <div v-if="componentView === 'register'">
+      <RegisterNewCrop @handleAddCrop="handleAddCrop" />
+    </div>
+    <div v-else-if="componentView === 'selection'">
+      <CropSelection
+        @handleClickPrev="handleClickPrev"
+        @handleClickNext="handleClickNext"
+      />
+    </div>
+    <div v-else-if="componentView === 'additional'">
+      <AdditionalInformation
+        @handleClickPrev="handleClickPrev"
+        @handleClickNext="handleClickNext"
+      />
+    </div>
+    <div v-else-if="componentView === 'list'">
+      <ListCrops @handleAddCrop="handleAddCrop" />
+    </div>
   </div>
 </template>
 

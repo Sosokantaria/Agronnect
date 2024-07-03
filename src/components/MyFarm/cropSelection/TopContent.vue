@@ -2,27 +2,28 @@
   <div
     class="w-[90%] shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] absolute top-[-6vh] left-[5%] h-[12vh] rounded-[8px] bg-teal-dark flex justify-center items-center"
   >
-    <div class="flex justify-center items-center relative bottom-2 w-full">
-      <div class="flex flex-col justify-center items-center">
-        <v-icon
-          name="fa-circle"
-          class="text-white h-[16px] w-[16px] z-10 absolute left-[28%]"
-        /><span
-          class="text-[16px] text-white font-[700] leading-[22.4px] absolute left-[20%] bottom-[-4vh]"
-          >CROP SELECTION</span
-        >
+    <div class="flex flex-col justify-center items-center w-full gap-2">
+      <div class="flex w-full justify-center">
+        <img
+          src="../../../assets/icons/bullet.svg"
+          alt="bullet"
+          class="text-white h-[16px] w-[16px]"
+        /><img
+          src="../../../assets/icons/Line.svg"
+          alt="line"
+          class=" w-[42%]"
+        /><img
+          src="../../../assets/icons/bullet.svg"
+          alt="bullet"
+          class="color h-[16px] w-[16px]"
+        />
       </div>
-      <img
-        src="../../../assets/icons/Line.svg"
-        alt="logo"
-        class="text-teal-liter relative w-[42%]"
-      />
-      <div class="flex flex-col justify-center items-center">
-        <v-icon
-          name="fa-circle"
-          class="text-teal-liter h-[16px] w-[16px] absolute right-[28%]"
-        /><span
-          class="text-[12px] text-teal-liter font-[400] leading-[16.8px] hidden tablet:flex absolute right-[16%] bottom-[-3.6vh]"
+      <div class="flex mx-auto tablet:justify-between justify-start w-[60%]">
+        <span
+          class="text-xl text-white font-[700] leading-[22.4px]"
+          >CROP SELECTION</span
+        ><span
+          class="text-sm text-teal-liter font-[400] leading-[16.8px] hidden tablet:flex "
           >ADDITIONAL INFORMATION</span
         >
       </div>
@@ -34,5 +35,8 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.color{
+     filter: brightness(90%) saturate(31%) hue-rotate(173deg) brightness(90%) contrast(88%);
+}
 </style>

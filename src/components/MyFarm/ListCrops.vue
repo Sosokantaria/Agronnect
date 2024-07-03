@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tablet:max-h-[80vh] pb-[70px] desktop:max-h-[88vh]  mx-auto pt-6 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 md:pl-10 gap-x-8 gap-y-8 overflow-y-scroll container"
+    class="tablet:max-h-[80vh] pb-8 md:pb-0 desktop:max-h-[88vh]  mx-auto pt-6 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 md:pl-10 gap-x-8 gap-y-8 overflow-y-scroll container"
   >
     <div
       @click="handleAddCrop"
@@ -11,19 +11,19 @@
         alt="vector"
         class="w-[33.33px] h-[33.33px] text-teal-lite"
       />
-      <p class="font-[700] text-[20px] text-black leading-[28px]">
+      <p class="font-[700] text-3xl text-black leading-[28px]">
         Add New Crop
       </p>
     </div>
     <div
       v-for="crop in cropsArr"
       :key="crop.id"
-      class="w-[330px] mx-auto  h-[170px] relative rounded-xl bg-white flex flex-col justify-between items-center  shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
+      class="w-[335px] mx-auto  h-[180px] relative rounded-xl bg-white flex flex-col justify-between items-center  shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
     >
       <div class="flex absolute top-[-20px] w-[93%] justify-between left-4">
         <div class="flex items-center justify-center gap-2">
           <img :src="crop.img" alt="crop img" class="h-[74px] w-[75px]" />
-          <h2 class="font-[700] text-[16px] leading-[22.4px] text-black">
+          <h2 class="font-[700] text-xl leading-[22.4px] text-black">
             {{ crop.title }}
           </h2>
         </div>
@@ -41,7 +41,7 @@
               alt="map-marker-outline"
               class="icon-img h-[24px] w-[24px]"
             />
-            <p class="font-[400] text-[14px] leading-[19.6px] text-gray-dark">
+            <p class="font-[400] text-base leading-[19.6px] text-gray-dark">
               {{ crop.location }}
             </p>
           </div>
@@ -51,7 +51,7 @@
               alt="map-marker-outline"
               class="icon-img h-[24px] w-[24px]"
             />
-            <p class="font-[400] text-[14px] leading-[19.6px] text-gray-dark">
+            <p class="font-[400] text-base leading-[19.6px] text-gray-dark">
               {{ crop.unit }}
             </p>
           </div>
@@ -63,7 +63,7 @@
             alt="eye-outline"
             class="icon-img-black h-[24px] w-[24px]"
           />
-          <p class="font-[700] text-[12px] text-black leading-[16.8px]">VIEW DETAILS</p>
+          <p class="font-[700] text-sm text-black leading-[16.8px]">VIEW DETAILS</p>
         </div>
       </div>
     </div>

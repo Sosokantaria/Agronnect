@@ -2,11 +2,11 @@
   <div
     class="flex flex-col justify-center items-center mt-[100px] text-center text-black gap-10"
   >
-    <h2 class="font-[700] text-[20px] leading-[23.44px] text-black">
+    <h2 class="font-[700] text-3xl leading-[23.44px] text-black">
       Register The Crops of Your Farm
     </h2>
     <p
-      class="text-center text-gray-dark text-[16px] font-[400] leading-[22.4px]"
+      class="text-center text-gray-dark text-xl font-[400] leading-[22.4px]"
     >
       Register the crops of your farm on Telagri and gain access to
       <br />affordable remote agronomy services and expert knowledge sharing.
@@ -15,8 +15,12 @@
       @click="handleAddCrop"
       class="text-white flex items-center bg-teal-lite rounded-[8px] px-[20px] py-[10px]"
     >
-      <v-icon name="px-plus" />
-      <span class="text-[14px] font-[700] leading-[19.6px]">ADD CROP</span>
+      <img
+          src="../../assets/icons/plus.svg"
+          alt="plusIcon"
+          class="h-[24px] w-[24px] icon-white"
+        />
+      <span class="text-base font-[700] leading-[19.6px]">ADD CROP</span>
     </button>
   </div>
 </template>
@@ -33,4 +37,7 @@ export default {
 </script>
 
 <style>
+ .icon-white {
+    filter: brightness(0) invert(1); 
+  }
 </style>

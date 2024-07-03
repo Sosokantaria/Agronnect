@@ -3,12 +3,12 @@
     class="max-w-[760px] mx-[10px] tablet:mx-auto text-center flex flex-col"
   >
     <h2
-      class=" md:mb-[10px] mt-[50px] md:mt-[50px] laptop:mt-[80px] mb-[30px] text-black font-[700] text-[20px] leading-[28px]"
+      class=" md:mb-[10px] mt-[50px] md:mt-[50px] laptop:mt-[80px] mb-[30px] text-black font-[700] text-3xl leading-[28px]"
     >
       Provide additional information about your farm
     </h2>
     <div class="flex flex-col items-center gap-6 md:gap-2 laptop:gap-6">
-      <h3 class="font-[700] text-[16px] text-black leading-[18.75px]">
+      <h3 class="font-[700] text-xl text-black leading-[18.75px]">
         Where is your farm located?
       </h3>
       <div class="relative mobile:min-w-[350px]">
@@ -18,7 +18,7 @@
         />
         <span
           :class="{ filled: variety }"
-          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-[16px] font-[400] leading-[18.75px]"
+          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Farm Location
         </span>
         <img
@@ -37,7 +37,7 @@
               type="checkbox"
               class="border-solid h-[20px] w-[20px]  accent-teal-lite rounded-[5px] border-gray-dark"
             />
-            <p class="font-[400] md:max-w-[25vw] text-[16px] leading-[18.75px] text-gray-dark ">
+            <p class="font-[400] md:max-w-[25vw] flex text-start text-xl leading-[18.75px] text-gray-dark ">
               {{ inputValue.value }}
             </p>
           </div>

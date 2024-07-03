@@ -26,6 +26,7 @@ const routes: Array<RouteRecordRaw> = [
     name: "Offers",
     component: () =>
       import(/* webpackChunkName: "Offers" */ "../views/Offers.vue"),
+    props:true,
   },
   {
     path: "/Chat",

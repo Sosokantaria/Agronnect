@@ -2,7 +2,7 @@
   <div
     class="max-w-[470px] mobile:mx-auto mobile:px-[10px] tablet:px-0 text-center h-full mt-[40px] flex flex-col justify-center items-center gap-6"
   >
-    <h2 class="font-[700] text-[20px] leading-[28px]">
+    <h2 class="font-[700] text-3xl leading-[28px]">
       Let's select the crop you cultivate on your farm
     </h2>
     <div
@@ -19,7 +19,7 @@
         </select>
         <span
           :class="{ filled: crop }"
-          class="absolute left-[20px] top-[21%] px-2 bg-white text-gray-dark text-[16px] font-[400] leading-[18.75px]"
+          class="absolute left-[20px] top-[21%] px-2 bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Crop</span
         >
       </div>
@@ -30,7 +30,7 @@
         />
         <span
           :class="{ filled: area }"
-          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-[16px] font-[400] leading-[18.75px]"
+          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Area</span
         >
       </div>
@@ -45,7 +45,7 @@
         </select>
         <span
           :class="{ filled: unit }"
-          class="absolute left-[20px] top-[-10px] px-2 bg-white text-gray-dark text-[12px] font-[400] leading-[18.75px]"
+          class="absolute left-[20px] top-[-10px] px-2 bg-white text-gray-dark text-sm font-[400] leading-[18.75px]"
           >unit</span
         >
       </div>
@@ -56,7 +56,7 @@
         />
         <span
           :class="{ filled: variety }"
-          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-[16px] font-[400] leading-[18.75px]"
+          class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Variety (optional)</span
         >
       </div>
@@ -67,7 +67,7 @@
           src="../../../assets/icons/plus.svg"
           alt="plusIcon"
           class="h-[24px] w-[24px] text-gray-dark"
-        /><span class="text-[14px] font-[700] leading-[19.6px]"
+        /><span class="text-base font-[700] leading-[19.6px]"
           >ADD VARIETY</span
         >
       </button>
