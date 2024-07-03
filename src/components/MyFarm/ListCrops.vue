@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tablet:max-h-[80vh] pb-[70px] desktop:max-h-[88vh]  mx-auto pt-6 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 md:pl-10 gap-x-8 gap-y-8 overflow-y-scroll container"
+    class="tablet:max-h-[80vh] pb-8 md:pb-0 desktop:max-h-[88vh]  mx-auto pt-6 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 md:pl-10 gap-x-8 gap-y-8 overflow-y-scroll container"
   >
     <div
       @click="handleAddCrop"

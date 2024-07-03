@@ -1,5 +1,5 @@
 <template>
-  <div class=" h-full mb-[66px] md:mb-0">
+  <div class=" h-full md:mx-6 mb-[66px] md:mb-0">
     <span
       ><span class="mx-1 ml-6 text-blue-darkest font-[400] text-xl leading-[22.4px]"
         >/ View Request</span
@@ -76,7 +76,7 @@
               src="../../assets/icons/close-thick.svg"
             />
             <span
-              class="font-[400] text-[16px] leading-[18.75px] text-gray-dark"
+              class="font-[400] text-[16px] leading-[18.75px] py-2 text-gray-dark"
               >{{ item.text }}</span
             >
           </div>
@@ -92,7 +92,7 @@
         }}</span>
       </div>
       <hr class="w-full text-gray-dark my-2" />
-      <div>
+      <div class="flex flex-col gap-3">
         <h2 class="font-[700] text-xl leading-[22.4px] text-black">
           Communication language with the agronimist
         </h2>

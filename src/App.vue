@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-full w-full justify-between">
+  <div class="flex flex-col h-[100vh] w-full justify-between">
     <div class="flex">
       <div class="hidden md:flex w-[300px] mt-[21px] "><SideBar /></div>
       <div  class="w-full md:flex-grow  px-[21px] md:px-0 md:pr-[21px] mb-[66px] md:ml-2">
