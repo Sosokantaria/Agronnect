@@ -1,6 +1,7 @@
 <template>
   <div
-    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]  md:ml-10  pb-5 rounded-[12px]"
+    :class="`h-[${height}]`"
+    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] md:mb-5 pb-5 md:mt-[50px] md:mr-4 rounded-[12px]"
   >
     <div class="flex justify-end w-full items-center gap-2 p-4">
       <img
@@ -13,9 +14,9 @@
         >Archive</span
       >
     </div>
-    <div class="overflow-y-scroll h-full md:h-[68vh]">
+    <div class="h-full">
       <CropRequestsBox
-        v-for="(request,index) in requestsData"
+        v-for="(request, index) in requestsData"
         :key="index"
         :id="request.id"
         :title="request.title"
@@ -53,7 +54,10 @@ export default defineComponent({
       emit("hendelViewDetails", payload);
     };
     fetchData();
-    return { requestsData,hendelViewDetails };
+    const height = ref();
+
+
+    return { requestsData, hendelViewDetails, height };
   },
 });
 </script>

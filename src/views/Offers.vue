@@ -1,13 +1,16 @@
 <template>
-  <div v-if="componentView === 'notNewOffers'" class="h-[78vh]">
+  <div v-if="componentView === 'notNewOffers'">
     <NotNewOffers @handleViewArchive="handleViewArchive" />
   </div>
   <div v-else-if="componentView === 'newOffers'"><NewOffers /></div>
-  <div v-else-if="componentView === 'archive'" class="h-full md:h-[78vh] ">
+  <div v-else-if="componentView === 'archive'">
     <Archive @hendelViewDetails="hendelViewDetails" />
   </div>
   <div v-else-if="componentView === 'viewRequest'">
-    <ViewRequest :viewRequestData="viewRequestData" @handleBackToOffers="handleBackToOffers" />
+    <ViewRequest
+      :viewRequestData="viewRequestData"
+      @handleBackToOffers="handleBackToOffers"
+    />
   </div>
 </template>
 
@@ -41,16 +44,15 @@ export default {
       viewRequestData.value = payload.data;
       componentView.value = payload.msg;
     };
-    const handleBackToOffers =(msg)=>{
+    const handleBackToOffers = (msg) => {
       componentView.value = msg;
-    }
-    // componentView.value="viewRequest"
+    };
     return {
       componentView,
       handleViewArchive,
       hendelViewDetails,
       viewRequestData,
-      handleBackToOffers
+      handleBackToOffers,
     };
   },
 };

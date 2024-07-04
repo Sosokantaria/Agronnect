@@ -1,9 +1,13 @@
 <template>
+  <div class="h-[934px] md:h-[1038px]">
+
+  
+
+  </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style>

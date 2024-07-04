@@ -1,14 +1,15 @@
 <template>
   <div class="flex w-full">
-    <div
-      :class="newRequest ? 'bg-teal-litest' : 'bg-white'"
-      class="tablet:hidden flex w-[15%] justify-center px-3 items-center"
-    >
-      <router-link :to="{ name: 'Chat' }" class="flex laptop:hidden">
+    <div class="w-[15%] flex items-center justify-center tablet:hidden" :class="newRequest?'bg-teal-litest':'bg-white'">
+      <router-link
+        :to="{ name: 'Chat' }"
+        :class="newRequest ? 'bg-teal-100' : 'bg-teal-litest'"
+        class=" rounded-[8px] flex justify-center px-3 w-[44px] h-[44px] items-center"
+      >
         <img
-          src="../../../assets/icons/Frame 1321314597 (2).svg"
+          src="../../../assets/icons/forum-outline-teal.svg"
           alt="forum"
-          class="rounded-[8px] min-w-[44px] min-h-[44px]"
+          class="min-w-[24px] min-h-[24px]"
       /></router-link>
     </div>
     <div
@@ -24,13 +25,16 @@
               name
             }}</span>
           </div>
-          <div class="items-center rounded-[8px] hidden tablet:flex" :class="newRequest?'bg-teal-100' : 'bg-teal-litest'"
-            ><router-link :to="{ name: 'Chat' }" >
-              <img
-                src="../../../assets/icons/Frame 1321314597 (2).svg"
-                alt="forum"
-                class="rounded-[8px] w-[44px] h-[44px]" /></router-link
-          ></div>
+          <router-link
+            :to="{ name: 'Chat' }"
+            class="items-center rounded-[8px] w-[44px] h-[44px] justify-center hidden tablet:flex"
+            :class="newRequest ? 'bg-teal-litest' : 'bg-teal-100'"
+          >
+            <img
+              src="../../../assets/icons/forum-outline-teal.svg"
+              alt="forum"
+              class="w-[24px] h-[24px]"
+          /></router-link>
         </div>
         <div class="min-w-[28%] flex items-center justify-star">
           <div class="flex items-center gap-3">
@@ -51,7 +55,6 @@
         <img
           src="../../../assets/icons/Vector (2).svg"
           alt="forum"
-          :class="newRequest ? 'color' : 'black'"
           class="w-[18px] h-[18px]"
         /><span
           @click="hendelViewDetails"
@@ -126,20 +129,19 @@ export default defineComponent({
     }
     const computedClass = computed(() => {
       return newRequest.value
-        ? "bg-teal-100"
+        ? "bg-teal-litest tablet:bg-teal-100"
         : (props.index ?? 0) % 2 === 0
-        ? "bg-bgdark"
+        ? "bg-white"
         : "bg-white tablet:bg-gray-bgdark";
     });
-      const computedClassTwo = computed(() => {
+    const computedClassTwo = computed(() => {
       return newRequest.value
         ? "bg-teal-100"
         : (props.index ?? 0) % 2 === 0
-        ? "bg-white"
-        : "bg-gray-bgdark";
+        ? "bg-gray-bgdark tablet:bg-white"
+        : "bg-gray-bgdark tablet:bg-gray-bgdark";
     });
-    
-    
+
     const hendelViewDetails = () => {
       const payload = {
         msg: "viewRequest",
@@ -186,7 +188,7 @@ export default defineComponent({
       newRequest,
       hendelViewDetails,
       computedClass,
-      computedClassTwo
+      computedClassTwo,
     };
   },
 });

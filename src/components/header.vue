@@ -1,60 +1,62 @@
 <template>
-  <div class="flex justify-between w-full mt-[21px] mr-[21px]">
-    <div class="h-[7vh] flex items-center pl-3 md:pl-11 md:gap-2">
-      <div class="text-teal-lite hidden laptop:flex ml-2">
+  <div class="flex justify-between h-[42px] mx-7 md:mx-0 mt-2 md:mt-5 ">
+    <div class="flex items-center  md:mt-5 ">
+      <div class="text-teal-lite hidden laptop:flex  ">
         <img src="../assets/icons/chevron-right.svg" class="colot-teal" />
       </div>
       <span
-        class="hidden font-robotoSlab laptop:flex text-5xl font-[700] tracking-wide leading-[39.57px]"
+        class="hidden font-robotoSlab text-black laptop:flex text-5xl font-[700] leading-[39.57px]"
         >{{ $route.name }}</span
       >
-      <span class="text-black text-3xl font-[700]  tracking-tight flex md:hidden"
+      <span class="text-black text-3xl font-[700] flex md:hidden"
         >Hi, Andrea</span
       >
     </div>
-    <div
-      class="flex gap-3 h-[47px] pr-3 md:pr-0 tablet:divide-x-2 divide-gray-lite"
-    >
-      <div class="h-[45px] flex items-center relative">
+    <div class="flex justify-end items-center h-[42px]">
+      <div class=" flex items-center  mt-1.5 mr-7 md:mr-4 relative">
         <img
           src="../assets/icons/bell-outline.svg"
-          class="flex mr-5 h-[24px] static text-gray-dark"
+          class=" h-[19px] w-[19px]"
         />
         <div
           v-if="activities > 0"
-          class="flex justify-center text-[10px] text-white font-[700] items-center rounded-[19px] w-[28px] h-[18px] absolute top-[9px] left-[9px] bg-red"
+          class="flex justify-center text-[10px] text-white font-[700] items-center rounded-[19px] w-[28px] h-[18px] absolute top-[-5px] left-[9px] bg-red"
         >
-          {{ activities }}
+        <span class="font-[700] text-sm1 text-white leading-[14px]">{{ activities }}</span>  
         </div>
       </div>
-      <div class="flex items-centre pl-2 gap-3">
+      <hr class="hidden md:flex w-[2px] h-[28px] mx-3 bg-gray-lite"/>
+      <div class="flex items-centre gap-3">
         <span
-          class="text-black mt-1 text-3xl font-[700] tracking-tight md:flex hidden"
+          class="text-black text-3xl font-[700] leading-[23.44px] md:flex items-center hidden"
           >Hi, Andrea</span
         ><router-link
           :to="{ name: 'MyFarm' }"
-          class="flex h-[41px] items-center gap-2 text-teal-lite border-[2px] border-teal-lite rounded-[8px] px-[20px]"
+          class="flex items-center gap-2.5 border-[1px] border-teal-lite h-[40px] md:h-[42px] w-[101px] md:w-[120px] rounded-[8px] justify-center"
         >
           <img
             src="../assets/icons/account-circle.svg"
             class="h-[24px] w-[24px]"
-          /><span class="text-sm font-[700] tracking-tight">FARMER</span>
+          /><span class="text-sm font-[700] leading-[14.06px] text-teal-lite">FARMER</span>
         </router-link>
       </div>
-      <div>
+      <hr class="hidden md:flex w-[2px] h-[28px] mx-3 bg-gray-lite"/>
+      <div >
         <router-link
           :to="{ name: 'FindSpecialists' }"
-          class="ml-3 text-white bg-teal-lite h-[41px] hidden tablet:flex justify-center gap-3 rounded-[8px] shadow-lg py-[8px] px-[20px]"
+          class=" bg-teal-lite  hidden tablet:flex justify-center gap-3 items-center rounded-[8px] shadow-lg h-[42px] w-[191px]  "
         >
-          <span class="text-xl font-[700]">Find Specialists</span
-          ><img src="../assets/icons/account-search-outline 1.svg" />
+          <span class="text-xl font-[700] text-white">Find Specialists</span
+          ><img src="../assets/icons/account-search-outline 1.svg" class="h-[24px] w-[24px]" />
         </router-link>
       </div>
     </div>
   </div>
-  <div class="laptop:hidden flex h-[7vh] items-center md:pl-11 gap-2">
-    <img src="../assets/icons/chevron-right.svg" class="colot-teal" />
-    <span class="text-5xl font-[700] tracking-wide leading-[39.57px]">{{
+  <div
+    class="laptop:hidden text-black mt-5 ml-4 flex h-[40px] items-center  "
+  >
+    <img src="../assets/icons/chevron-right.svg"  />
+    <span class="text-5xl font-[700] leading-[39.57px] font-robotoSlab">{{
       $route.name
     }}</span>
   </div>
