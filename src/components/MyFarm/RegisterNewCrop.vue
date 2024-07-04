@@ -1,7 +1,7 @@
 <template>
 
   <div
-    class="h-[900px] flex flex-col justify-center items-center bg-black text-center text-black gap-8"
+    class="h-[191px] md:h-[169px] mt-[261px] md:mt-[304px] mb-[346px]  flex flex-col justify-center items-center text-center gap-[30px]"
   >
     <h2 class="font-[700] text-3xl leading-[23.44px] text-black">
       Register The Crops of Your Farm
@@ -14,7 +14,7 @@
     </p>
     <button
       @click="handleAddCrop"
-      class="text-white flex items-center bg-teal-lite rounded-[8px] px-[20px] py-[10px]"
+      class="text-white flex justify-center items-center bg-teal-lite w-[153px] h-[42px] rounded-[8px] gap-[10px]"
     >
       <img
           src="../../assets/icons/plus.svg"

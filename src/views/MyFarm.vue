@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="md:mr-8">
     <div v-if="componentView === 'register'">
       <RegisterNewCrop @handleAddCrop="handleAddCrop" />
     </div>

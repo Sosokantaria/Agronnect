@@ -1,10 +1,10 @@
 <template>
   <div
-    class="left-0 right-0 bottom-0 fixed h-[66px] grid grid-cols-5 bg-white shadow-[rgba(0,0,0,0.1)_0px_0px_10px_0]"
+    class="left-0 right-0 bottom-0 fixed h-[66px] grid grid-cols-5 px-[7px] gap-[7px] py-[5px] bg-white shadow-[rgba(0,0,0,0.3)_0px_0px_19px_0]"
   >
     <router-link
       to="./"
-      class="nav-link rounded-[15px] flex flex-col items-center justify-center gap-3 tracking-tighter"
+      class="nav-link rounded-[15px] flex flex-col items-center justify-between py-[5px]"
     >
       <img
         src="../assets/icons/view-dashboard-outline.svg"
@@ -15,7 +15,7 @@
 
     <router-link
       :to="{ name: 'MyFarm' }"
-      class="nav-link rounded-[15px] flex flex-col items-center justify-center gap-3 tracking-tighter"
+      class="nav-link rounded-[15px] flex flex-col items-center justify-between py-[5px]"
       ><img
         src="../assets/icons/home-silo.svg"
         alt="home silo"
@@ -25,7 +25,7 @@
     <div class="relative">
       <router-link
         :to="{ name: 'FindSpecialists' }"
-        class="nav-link-find shadow-[rgba(0,0,0,0.2)_0_4px_10px_4px] top-[-9px] rounded-[15px] h-[66px] absolute w-[20vw] flex flex-col bg-teal-lite items-center justify-center tracking-tighter"
+        class="nav-link-find shadow-[rgba(0,0,0,0.2)_0_4px_10px_4px] top-[-14px] rounded-[15px] min-w-[90px] h-[70px] absolute left-0 right-0 flex flex-col bg-teal-lite items-center justify-center"
         ><div class="flex items-center gap-2">
           <img
           src="../assets/icons/account-search-outline 1.svg" class="w-[24px] h-[24px]" /><span
@@ -39,7 +39,7 @@
 
     <router-link
       :to="{ name: 'Offers' }"
-      class="nav-link rounded-[15px] flex flex-col items-center justify-center gap-3 tracking-tighter"
+      class="nav-link rounded-[15px] flex flex-col items-center justify-between py-[5px]"
       ><img
         src="../assets/icons/arrow-right-bold-circle-outline.svg"
         alt="arrow right"
@@ -49,7 +49,7 @@
 
     <router-link
       :to="{ name: 'Chat' }"
-      class="nav-link rounded-[15px] flex flex-col items-center justify-center gap-3 tracking-tighter"
+      class="nav-link rounded-[15px] flex flex-col items-center justify-between py-[5px]"
     >
       <img
         src="../assets/icons/forum-outline.svg"
