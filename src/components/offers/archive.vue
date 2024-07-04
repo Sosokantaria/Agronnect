@@ -23,6 +23,7 @@
         :urgent="request.urgent"
         :subtitle="request.subTitle"
         :reqArr="request.reqArr"
+        :detailsData="request.detailsData"
         @hendelViewDetails="hendelViewDetails"
       />
     </div>
@@ -46,6 +47,7 @@ export default defineComponent({
       try {
         const response = await axios.get("http://localhost:3000/croprequests");
         requestsData.value = response.data;
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -54,8 +56,7 @@ export default defineComponent({
       emit("hendelViewDetails", payload);
     };
     fetchData();
-    const height = ref();
-
+    const height = ref(window.innerHeight);
 
     return { requestsData, hendelViewDetails, height };
   },

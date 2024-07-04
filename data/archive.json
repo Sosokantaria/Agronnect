@@ -5,6 +5,55 @@
       "title": "Alfalfa (Medicago Sativa)",
       "urgent": false,
       "subTitle": "",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -61,6 +110,55 @@
       "title": "Apple (Malus Domestica)",
       "urgent": true,
       "subTitle": "Request valid for 5 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -117,6 +215,55 @@
       "title": "Almond (Amygdalus)",
       "urgent": false,
       "subTitle": "",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -173,6 +320,55 @@
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 5 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -229,6 +425,55 @@
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -279,11 +524,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -334,11 +629,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -389,11 +734,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -444,11 +839,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -499,11 +944,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -554,11 +1049,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -609,11 +1154,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -664,11 +1259,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -719,11 +1364,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -774,11 +1469,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -829,11 +1574,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -884,11 +1679,61 @@
           "currentRequestId": "6"
         }
       ]
-    },{
+    },
+    {
       "id": "#779012",
       "title": "Strawberry (Fragaria)",
       "urgent": false,
       "subTitle": "Request valid for 3 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",
@@ -945,6 +1790,55 @@
       "title": "Apple (Malus Domestica)",
       "urgent": true,
       "subTitle": "Request valid for 6 days",
+      "detailsData": {
+        "imgSrc": "Rectangle 116.svg",
+        "title": "Strawberry (Fragaria)",
+        "duration": "Offer valid for 6 days",
+        "location": "16 V. Anjaparidze St, Tbilisi, Georgia",
+        "datetime": "05.05.2024 13:18",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "urgent": true,
+        "additionalInfo": [
+          {
+            "text": "I have already planted in my farm.",
+            "value": true
+          },
+          {
+            "text": "I have a weather station in the farm.",
+            "value": false
+          },
+          {
+            "text": "There is an irrigation water source in the farm.",
+            "value": false
+          },
+          {
+            "text": "Subsurface Irrigation System",
+            "value": true
+          },
+          {
+            "text": "I have some type of sensors in the farm.",
+            "value": false
+          },
+          {
+            "text": "I am using a management software for my farm.",
+            "value": true
+          },
+          {
+            "text": "Producing in a greenhouse.",
+            "value": true
+          },
+          {
+            "text": "I have done the soil analysis.",
+            "value": true
+          }
+        ],
+        "farmProblemInfo": "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
+        "corn": "40 Acres",
+        "id": "1"
+      },
       "reqArr": [
         {
           "img": "Ellipse_2.svg",

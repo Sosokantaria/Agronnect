@@ -1,10 +1,13 @@
 <template>
   <div class="flex w-full">
-    <div class="w-[15%] flex items-center justify-center tablet:hidden" :class="newRequest?'bg-teal-litest':'bg-white'">
+    <div
+      class="w-[15%] flex items-center justify-center tablet:hidden"
+      :class="newRequest ? 'bg-teal-litest' : 'bg-white'"
+    >
       <router-link
         :to="{ name: 'Chat' }"
         :class="newRequest ? 'bg-teal-100' : 'bg-teal-litest'"
-        class=" rounded-[8px] flex justify-center px-3 w-[44px] h-[44px] items-center"
+        class="rounded-[8px] flex justify-center px-3 w-[44px] h-[44px] items-center"
       >
         <img
           src="../../../assets/icons/forum-outline-teal.svg"
@@ -73,6 +76,7 @@
 </template>
 
 <script lang="ts">
+import { detailsData } from "@/types/archiveData";
 import { defineComponent, computed, ref, PropType } from "vue";
 import durationTextContainer from "./durationTextContainers.vue";
 
@@ -111,6 +115,10 @@ export default defineComponent({
       require: true,
       type: Number,
     },
+    detailsData: {
+      require: true,
+      type: Object as PropType<detailsData>,
+    },
   },
   setup(props, { emit }) {
     const imgSrc = computed(() => require(`@/assets/imgs/${props.img}`));
@@ -145,35 +153,7 @@ export default defineComponent({
     const hendelViewDetails = () => {
       const payload = {
         msg: "viewRequest",
-        data: {
-          imgSrc: "Rectangle 116.svg",
-          title: props.title,
-          duration: props.durationTime,
-          location: "16 V. Anjaparidze St,Tbilisi,Georgia",
-          datetime: "05.05.2024 13:18",
-          languages: ["Spanish", "English"],
-          urgent: true,
-          additionalInfo: [
-            { text: "I have already planted in my farm.", value: true },
-            { text: "I have a weather station in the farm.", value: false },
-            {
-              text: "There is an irrigation water source in the farm.",
-              value: false,
-            },
-            { text: "Subsurface Irrigation System", value: true },
-            { text: "I have some type of sensors in the farm.", value: false },
-            {
-              text: "I am using a management software for my farm.",
-              mvalue: true,
-            },
-            { text: "Producing in a greenhouse.", value: true },
-            { text: "I have done the soil analysis.", value: true },
-          ],
-          farmProblemInfo:
-            "Pest infestation threatens crop productivity, seeking agronomist guidance for tailored strategies and effective management.",
-          corn: "40 Acres",
-          id: props.currentRequestId,
-        },
+        data: props.detailsData,
       };
 
       emit("hendelViewDetails", payload);

@@ -1,21 +1,22 @@
 <template>
-  <div class=" h-full md:mx-6 mb-[66px] md:mb-0">
+  <div class="h-full md:mx-6 mb-[66px] md:mb-0">
     <span
-      ><span class="mx-1 ml-6 text-blue-darkest font-[400] text-xl leading-[22.4px]"
+      ><span
+        class="mx-1 ml-6 text-blue-darkest font-[400] text-xl leading-[22.4px]"
         >/ View Request</span
-      >{{ viewRequestData.id }}</span
+      >{{ detailsData.id }}</span
     >
     <div class="flex flex-col gap-2 bg-whiteDark p-6 tablet:hidden">
       <div class="flex w-full justify-between">
-        <durationText :text="viewRequestData.duration" />
+        <durationText :text="detailsData.duration" />
         <span
-          v-if="viewRequestData.urgent"
+          v-if="detailsData.urgent"
           class="py-[1px] px-[10px] rounded-[8px] flex gap-[40px] text-red border-red border-[1px]"
           >Urgent Request</span
         >
       </div>
       <span class="font-[400] text-[16px] leading-[18.75px] text-gray-dark">{{
-        viewRequestData.datetime
+        detailsData.datetime
       }}</span>
     </div>
     <div class="flex flex-col justify-between mt-3 tablet:mt-0 h-full px-6">
@@ -25,11 +26,11 @@
             <img :src="imgSrc" alt="img" />
             <div class="flex flex-col items-center justify-start gap-2">
               <h2 class="text-black font-[700] mt-2 text-[20px] leading-[28px]">
-                {{ viewRequestData.title }}
+                {{ detailsData.title }}
               </h2>
               <span
                 class="font-[400] text-[16px] leading-[22.4px] text-gray-dark"
-                >{{ viewRequestData.corn }}</span
+                >{{ detailsData.corn }}</span
               >
             </div>
           </div>
@@ -39,20 +40,20 @@
               class="teal"
               alt="iconLocation"
             /><span class="font-[400] text-base leading-[19.6px]">{{
-              viewRequestData.location
+              detailsData.location
             }}</span
             ><img src="../../assets/icons/Group 448.svg" alt="globus" />
           </div>
         </div>
-        <div class=" flex-col items-end justify-between hidden tablet:flex">
+        <div class="flex-col items-end justify-between hidden tablet:flex">
           <span
-            v-if="viewRequestData.urgent"
+            v-if="detailsData.urgent"
             class="py-[1px] px-[10px] rounded-[8px] flex gap-[40px] text-red border-red border-[1px]"
             >Urgent Request</span
           ><span
             class="font-[400] text-[16px] leading-[18.75px] text-gray-dark"
-            >{{ viewRequestData.datetime }}</span
-          ><durationText :text="viewRequestData.duration" />
+            >{{ detailsData.datetime }}</span
+          ><durationText :text="detailsData.duration" />
         </div>
       </div>
       <hr class="w-full text-gray-dark my-3" />
@@ -62,7 +63,7 @@
         </h2>
         <div class="w-full grid grid-cols-1 tablet:grid-cols-2">
           <div
-            v-for="(item, index) in viewRequestData.additionalInfo"
+            v-for="(item, index) in detailsData.additionalInfo"
             :key="index"
             class="flex gap-2 items-center"
           >
@@ -88,7 +89,7 @@
           Farm Problem
         </h2>
         <span class="font-[400] text-[16px] leading-[22.4px] text-gray-dark">{{
-          viewRequestData.farmProblemInfo
+          detailsData.farmProblemInfo
         }}</span>
       </div>
       <hr class="w-full text-gray-dark my-2" />
@@ -102,7 +103,7 @@
             class="h-[24px] w-[24px]"
             alt=""
           /><span
-            v-for="(lang, index) in viewRequestData.languages"
+            v-for="(lang, index) in detailsData.languages"
             :key="index"
             class="font-[400] text-[16px] leading-[22.4px] text-gray-dark"
             >{{ lang }}</span
@@ -126,28 +127,28 @@
 </template>
 
 <script lang="ts">
-import ViewRequestData from "../../types/ViewRequesData";
+import detailsData from "../../types/ViewRequesData";
 import { computed, defineComponent, PropType } from "vue";
 import durationText from "../../components/offers/globalcomponents/durationTextContainers.vue";
 export default defineComponent({
   components: { durationText },
   props: {
-    viewRequestData: {
+    detailsData: {
       require: true,
-      type: Object as PropType<ViewRequestData>,
-      default: () => Object || undefined,
+      type: Object as PropType<detailsData>,
+      default: () => Object || undefined || {},
     },
   },
   setup(props, { emit }) {
-    const { viewRequestData } = props;
+    const { detailsData } = props;
     const imgSrc = computed(() =>
-      require(`@/assets/imgs/${viewRequestData.imgSrc}`)
+      require(`@/assets/imgs/${detailsData.imgSrc}`)
     );
     const handleBackToOffers = () => {
       emit("handleBackToOffers", "archive");
     };
 
-    return { viewRequestData, imgSrc, handleBackToOffers };
+    return { detailsData, imgSrc, handleBackToOffers };
   },
 });
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between h-[42px] mx-7 md:mx-0 mt-2 md:mt-5 ">
+  <div class="flex justify-between h-[42px] mx-3 md:mx-0 mt-2 md:mt-5 ">
     <div class="flex items-center  md:mt-5 ">
       <div class="text-teal-lite hidden laptop:flex  ">
         <img src="../assets/icons/chevron-right.svg" class="colot-teal" />
@@ -53,7 +53,7 @@
     </div>
   </div>
   <div
-    class="laptop:hidden text-black mt-5 ml-4 flex h-[40px] items-center  "
+    class="laptop:hidden text-black mt-5  flex h-[40px] items-center  "
   >
     <img src="../assets/icons/chevron-right.svg"  />
     <span class="text-5xl font-[700] leading-[39.57px] font-robotoSlab">{{

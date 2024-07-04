@@ -2,9 +2,11 @@
   <div :class="`min-h-[${height}px]`">
     <div class="flex">
       <div class="hidden md:flex w-[331px]"><SideBar /></div>
-      <div class="w-full md:ml-12 md:mr-4 mb-[66px] md:mb-0">
+      <div class="w-full md:ml-12 mx-4 md:mx-0 md:mr-4 mb-[66px] md:mb-0">
         <Header />
-        <router-view />
+        <div class="pb-5">
+          <router-view />
+        </div>
       </div>
     </div>
     <div class="md:hidden">

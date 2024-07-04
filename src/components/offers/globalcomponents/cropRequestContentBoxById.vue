@@ -6,7 +6,7 @@
       class="min-h-[80px] w-full flex justify-start items-center cursor-pointer bg-gray-bgdark"
     >
       <div
-        class="h-[80px] w-[80px] bg-gray-bgdarker flex justify-center items-center"
+        class="h-[80px] tablet:w-[80px] w-[60px] bg-gray-bgdarker flex justify-center items-center"
       >
         <img
           src="../../../assets/icons/chevron-up.svg"
@@ -41,6 +41,7 @@
         :durationTime="req.durationTime"
         :location="req.location"
         :name="req.name"
+        :detailsData="detailsData"
         @hendelViewDetails="hendelViewDetails"
       />
     </div>
@@ -55,7 +56,10 @@ import duration from "./durationTextContainers.vue";
 const singleRequestContainer = defineAsyncComponent(
   () => import("../globalcomponents/singleRequestContainer.vue")
 );
-import { archiveDateSingleRequest } from "../../../types/archiveData";
+import {
+  archiveDateSingleRequest,
+  detailsData,
+} from "../../../types/archiveData";
 export default defineComponent({
   components: { duration, singleRequestContainer },
   props: {
@@ -74,6 +78,10 @@ export default defineComponent({
       type: Array as PropType<archiveDateSingleRequest[]>,
       default: () => [],
     },
+    detailsData: {
+      require: true,
+      type: Object as PropType<detailsData>,
+    },
   },
   setup(props, { emit }) {
     const isShow = ref(false);
@@ -84,7 +92,6 @@ export default defineComponent({
     const hendelViewDetails = (payload: string) => {
       emit("hendelViewDetails", payload);
     };
-
     return {
       toggleShow,
       isShow,
@@ -93,6 +100,7 @@ export default defineComponent({
       urgent: props.urgent,
       subtitle: props.subtitle,
       reqArr: props.reqArr,
+      detailsData: props.detailsData,
       hendelViewDetails,
     };
   },

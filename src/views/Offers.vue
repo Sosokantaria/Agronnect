@@ -8,7 +8,7 @@
   </div>
   <div v-else-if="componentView === 'viewRequest'">
     <ViewRequest
-      :viewRequestData="viewRequestData"
+      :detailsData="detailsData"
       @handleBackToOffers="handleBackToOffers"
     />
   </div>
@@ -39,9 +39,9 @@ export default {
     const handleViewArchive = (msg) => {
       componentView.value = msg;
     };
-    let viewRequestData = ref();
+    let detailsData = ref();
     const hendelViewDetails = (payload) => {
-      viewRequestData.value = payload.data;
+      detailsData.value = payload.data;
       componentView.value = payload.msg;
     };
     const handleBackToOffers = (msg) => {
@@ -51,7 +51,7 @@ export default {
       componentView,
       handleViewArchive,
       hendelViewDetails,
-      viewRequestData,
+      detailsData,
       handleBackToOffers,
     };
   },
