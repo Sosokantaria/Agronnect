@@ -17,12 +17,12 @@
     </div>
     <div
       :class="computedClassTwo"
-      class="flex justify-center tablet:justify-between flex-col tablet:flex-row w-[50%] p-2 tablet:w-[75%]"
+      class="flex justify-center tablet:justify-between flex-col tablet:flex-row w-[50%] p-2 tablet:w-[100%]"
     >
       <div
-        class="flex justify-between flex-col tablet:flex-row w-[100%] tablet:w-[70%] md:pl-[21px]"
+        class="flex justify-between flex-col tablet:flex-row w-[100%] tablet:w-[65%] md:pl-[21px]"
       >
-        <div class="flex justify-between tablet:pr-6 w-[100%] tablet:w-[70%]">
+        <div class="flex justify-between tablet:pr-6 w-[100%] tablet:w-[60%]">
           <div class="flex items-center tablet:w-[70%]">
             <img :src="imgSrc" alt="img" /><span class="ml-6 text-nowrap">{{
               name
@@ -52,7 +52,7 @@
     </div>
     <div
       :class="computedClass"
-      class="w-[35%] tablet:min-w-[10%] flex justify-center"
+      class="w-[35%] tablet:w-[25%] flex justify-center"
     >
       <div class="flex items-center gap-3 text-black">
         <img
