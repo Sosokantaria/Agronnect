@@ -1,11 +1,11 @@
 <template>
   <div
-    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] h-[130vh]  md:h-[71vh] laptop:h-[78vh] tablet:mx-[20px] pb-[66px] md:pb-8 relative m-auto mt-[10vh] rounded-[12px]"
+    class="bg-white shadow-[rgba(0,0,0,0.3)_0px_0px_4px_0px] pb-5 relative mt-[70px] rounded-[12px]"
   >
     <TopContent />
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col">
       <DataForm />
-      <div class="flex flex-col items-center justify-end h-full  ">
+      <div class="flex flex-col mt-[197px]  gap-4 items-center justify-end">
         <p
               class="font-[400] my-4 md:hidden text-center text-xl leading-[18.75px] text-gray-dark max-w-[420px]"
             >
@@ -33,7 +33,7 @@
             </p>
             <button
               @click="handleClickNext"
-              class="flex items-center justify-center rounded-[8px] py-[10px] px-[10px] bg-teal-lite shadow-[rgba(0,0,0,0.3)_0_1px_5px_1px]"
+              class="flex items-center justify-center rounded-[8px] py-[10px] px-[20px] bg-teal-lite shadow-[rgba(0,0,0,0.3)_0_1px_5px_1px]"
             >
               <span class="font-[700] text-base leading-[19.6px] text-white"
                 >SAVE</span
