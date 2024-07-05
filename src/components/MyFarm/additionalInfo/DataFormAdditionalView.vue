@@ -27,7 +27,7 @@
         />
       </div>
       <div class="flex flex-col items-center">
-        <div class="grid grid-cols-1 leptop:grid-cols-2 gap-5 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
           <div
             v-for="inputValue in inputValues"
             :key="inputValue.id"
