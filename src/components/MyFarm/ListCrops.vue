@@ -1,10 +1,10 @@
 <template>
   <div
-    class="tablet:max-h-[80vh] pb-8 md:pb-0 desktop:max-h-[88vh] mx-auto pt-6 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 md:pl-10 gap-x-8 gap-y-8 overflow-y-scroll container"
+    class=" mx-auto pb-5 pt-[29px] grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-[20px]  overflow-y-scroll container"
   >
     <div
       @click="handleAddCrop"
-      class="w-[330px] h-[180px] mx-auto rounded-xl bg-white flex flex-col justify-center items-center gap-4 shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
+      class="w-[330px] h-[170px] mt-[16px] mx-auto rounded-xl bg-white flex flex-col justify-center items-center gap-4 shadow-[rgba(0,0,0,0.3)_0_1px_5px_1px]"
     >
       <img
         src="../../assets/icons/Vector.svg"
@@ -16,7 +16,7 @@
     <div
       v-for="crop in cropsArr"
       :key="crop.id"
-      class="w-[335px] mx-auto h-[180px] relative rounded-xl bg-white flex flex-col justify-between items-center shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]"
+      class="w-[330px] mx-auto h-[170px] mt-[16px] relative rounded-xl bg-white flex flex-col justify-between items-center shadow-[rgba(0,0,0,0.3)_0_1px_5px_1px]"
     >
       <div class="flex absolute top-[-20px] w-[93%] justify-between left-4">
         <div class="flex items-center justify-center gap-2">
@@ -33,7 +33,7 @@
       </div>
       <div class="flex flex-col w-full mt-[80px]">
         <hr class="w-full bg-black border-[1px]" />
-        <div class="flex w-[90%] justify-between m-3">
+        <div class="flex ml-[11px] w-[308px] justify-between my-[11px]">
           <div class="flex items-center gap-1">
             <img
               src="../../assets/icons/map-marker-outline.svg"

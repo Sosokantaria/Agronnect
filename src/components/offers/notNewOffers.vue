@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center my-auto h-full text-center text-black gap-10"
+    class="flex flex-col justify-center items-center mx-auto my-[221px] w-[350px] md:w-[440px] h-[231px] md:h-[212px] md:my-[269px] text-center text-black gap-[30px]"
   >
     <h2 class="font-[700] text-3xl leading-[23.44px] text-black">
       No New Offers Yet!

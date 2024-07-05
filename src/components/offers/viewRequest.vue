@@ -1,9 +1,8 @@
 <template>
-  <div class="h-full md:mx-6 mb-[66px] md:mb-0">
+  <div class=" md:mt-[15px]">
     <span
-      ><span
-        class="mx-1 ml-6 text-blue-darkest font-[400] text-xl leading-[22.4px]"
-        >/ View Request</span
+      ><span class="text-blue-darkest font-[400] text-xl leading-[22.4px]"
+        >/ View Request </span
       >{{ detailsData.id }}</span
     >
     <div class="flex flex-col gap-2 bg-whiteDark p-6 tablet:hidden">
@@ -19,7 +18,7 @@
         detailsData.datetime
       }}</span>
     </div>
-    <div class="flex flex-col justify-between mt-3 tablet:mt-0 h-full px-6">
+    <div class="flex flex-col justify-between md:mt-[10px] pr-10">
       <div class="flex justify-between w-full">
         <div class="flex flex-col gap-5">
           <div class="flex gap-4">
@@ -80,6 +79,38 @@
               class="font-[400] text-[16px] leading-[18.75px] py-2 text-gray-dark"
               >{{ item.text }}</span
             >
+          </div>
+          <div class=" flex-col tablet:col-start-2 ml-[32px] gap-2 hidden md:flex ">
+            <div class="flex gap-1">
+              <img
+                src="../../assets/icons/paperclip.svg"
+                alt="paperclip"
+                class="w-[24px] h-[24px]"
+              />
+              <p class="font-[700] text-xl leading-[18.75px] text-black">
+                Soil_analysis.pdf
+              </p>
+            </div>
+            <div class="flex ">
+              <img
+                src="../../assets/icons/paperclip.svg"
+                alt="paperclip"
+                class="w-[24px] h-[24px]"
+              />
+              <p class="font-[700] text-xl leading-[18.75px] text-black">
+                Crop_research.docx
+              </p>
+            </div>
+            <div class="flex ">
+              <img
+                src="../../assets/icons/paperclip.svg"
+                alt="paperclip"
+                class="w-[24px] h-[24px]"
+              />
+              <p class="font-[700] text-xl leading-[18.75px] text-black">
+                Soil_structure.jpg
+              </p>
+            </div>
           </div>
         </div>
       </div>
