@@ -25,32 +25,36 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/agronnect.git
+   git clone https://github.com/Sosokantaria/agronnect.git
+
+   ```
 
 2. Navigate to the project directory:
 
-cd agronnect
-3. Install the dependencies:
+cd agronnect 3. Install the dependencies:
 yarn install
 
-Running the Project
+## Running the Project
+
 To run the project, you'll need two terminal windows or tabs:
 
 1. In the first terminal, start the Vue.js development server:
 
-  ```sh
-yarn serve
-
+```sh
+yarn serve 
+```
 2. In the second terminal, start the JSON server to watch the data:
 
-  ```sh
+```sh
 json-server --watch data/archive.json
+```
 
 
 Now, you can access the Vue.js application at `http://localhost:8080` and the JSON server at `http://localhost:3000`.
 
-Technologies Used
+## Technologies Used
 - Vue 3: A progressive JavaScript framework for building user interfaces.
 - TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
 - Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
 - JSON Server: A full fake REST API tool for development, used here to mock data from `archive.json`.
+
