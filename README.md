@@ -9,8 +9,6 @@ Welcome to Agronnect! This project is a Vue 3 application built with TypeScript 
 - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
@@ -58,3 +56,22 @@ Now, you can access the Vue.js application at `http://localhost:8080` and the JS
 - Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
 - JSON Server: A full fake REST API tool for development, used here to mock data from `archive.json`.
 
+## Project Structure
+Here's a brief overview of the project structure:
+
+├── data
+│   └── archive.json        # JSON file for the JSON server
+├── public
+│   └── index.html          # HTML template
+├── src
+│   ├── assets              # Static assets
+│   ├── components          # Vue components
+│   ├── router              # Vue router
+│   ├── types               # Vue types
+│   ├── views               # Vue views
+│   ├── App.vue             # Main App component
+│   └── main.ts             # Entry point for the application
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── package.json            # Project dependencies and scripts
+└── yarn.lock               # Lock file for Yarn
