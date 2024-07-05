@@ -1,6 +1,6 @@
 <template>
-  <div class="md:mr-8">
-    <div v-if="componentView === 'register'">
+  <div >
+    <div v-if="componentView === 'register'" class="md:mr-8">
       <RegisterNewCrop @handleAddCrop="handleAddCrop" />
     </div>
     <div v-else-if="componentView === 'selection'">

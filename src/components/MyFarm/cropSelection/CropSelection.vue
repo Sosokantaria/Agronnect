@@ -1,18 +1,18 @@
 <template>
   <div
-    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] h-[100vh] md:h-[71vh] laptop:h-[78vh] mx-[20px] pb-[66px] md:pb-8 relative mt-[10vh] rounded-[12px]"
+    class="bg-white shadow-[rgba(0,0,0,0.3)_0px_0px_4px_0px] pb-5 relative mt-[70px] rounded-[12px]"
   >
     <TopContent />
     <div class="flex flex-col h-full">
       <DataForm />
-      <div class="flex flex-col gap-4 items-center justify-end">
+      <div class="flex flex-col mt-[197px] md:mt-0 gap-4 items-center justify-end">
          <p
-              class=" md:hidden font-[400] text-center text-xl leading-[18.75px] text-gray-dark max-w-[420px] "
+              class=" md:hidden font-[400] text-center w-[350px] text-xl leading-[18.75px] text-gray-dark  "
             >
               Please consider, you can add or edit any information later.
             </p>
         <div
-          class="flex justify-between w-full px-[20px] "
+          class="flex justify-between w-full px-[30px] "
         >
           <button
             @click="handleClickPrev"

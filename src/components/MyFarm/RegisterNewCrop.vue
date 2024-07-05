@@ -1,7 +1,7 @@
 <template>
 
   <div
-    class="h-[191px] md:h-[169px] mt-[261px] md:mt-[304px] mb-[346px]  flex flex-col justify-center items-center text-center gap-[30px]"
+    class="min-h-[191px] md:h-[169px] mt-[261px] md:mt-[304px] mb-[346px]  flex flex-col justify-center items-center text-center gap-[30px]"
   >
     <h2 class="font-[700] text-3xl leading-[23.44px] text-black">
       Register The Crops of Your Farm
@@ -32,6 +32,8 @@ export default {
     const handleAddCrop = () => {
       emit("handleAddCrop", "selection");
     };
+
+    console.log(window.innerHeight);
     return { handleAddCrop };
   },
 };

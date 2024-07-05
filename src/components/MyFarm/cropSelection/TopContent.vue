@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[90%] shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] absolute top-[-6vh] left-[5%] h-[12vh] rounded-[8px] bg-teal-dark flex justify-center items-center"
+    class="w-[90%] shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] absolute top-[-40px] px-[30px] left-[5%] h-[80px] rounded-[8px] bg-teal-dark flex justify-center items-center"
   >
     <div class="flex flex-col justify-center items-center w-full gap-2">
       <div class="flex w-full justify-center">

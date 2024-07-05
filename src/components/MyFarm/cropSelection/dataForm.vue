@@ -1,12 +1,12 @@
 <template>
   <div
-    class="max-w-[470px] mobile:mx-auto mobile:px-[10px] tablet:px-0 text-center h-full mt-[40px] flex flex-col justify-center items-center gap-6"
+    class="md:max-w-[470px]   min-h-[218px] px-[20px] md:px-0 md:mx-auto  tablet:px-0 text-center pt-[60px] md:pt-0 md:py-[262px]  flex flex-col justify-center items-center gap-[20px]"
   >
-    <h2 class="font-[700] text-3xl leading-[28px]">
+    <h2 class="font-[700] max-w-[235px] tablet:max-w-[447px] text-3xl leading-[28px]">
       Let's select the crop you cultivate on your farm
     </h2>
     <div
-      class="grid grid-cols-4 tablet:grid-cols-4 grid-rows-4 tablet:grid-rows-3 gap-2"
+      class="grid grid-cols-4 tablet:grid-cols-4 grid-rows-4 tablet:grid-rows-3 gap-[20px]"
     >
       <div class="col-span-4 tablet:col-span-2 relative">
         <select

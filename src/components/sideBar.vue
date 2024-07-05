@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[300px] laptop:min-w-[300px] ml-[31px] mt-[21px] mb-5 rounded-[12px] bg-teal-dark"
+    class="w-[300px] h-full  laptop:min-w-[300px] ml-[31px] mt-[21px] rounded-[12px] bg-teal-dark"
   >
     <div
       class="flex w-[133px] mx-auto justify-center items-center gap-2.5 mt-[20px] h-[28.99px] cursor-default"
@@ -75,5 +75,8 @@
 <style scoped>
 .nav-link.router-link-active {
   background-color: rgba(0, 171, 137, 1);
+}
+.height{
+  min-height: calc(100vh-41px);
 }
 </style>

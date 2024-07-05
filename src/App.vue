@@ -1,8 +1,8 @@
 <template>
-  <div :class="`min-h-[${height}px]`">
+  <div>
     <div class="flex">
-      <div class="hidden md:flex w-[331px]"><SideBar /></div>
-      <div class="w-full md:ml-12 mx-4 md:mx-0 md:mr-4 mb-[66px] md:mb-0">
+      <div class="hidden md:flex w-[331px] min-h-screen pb-10"><SideBar /></div>
+      <div class="w-full  md:ml-12 mx-4 md:mx-0 md:mr-4 mb-[66px] md:mb-0">
         <Header />
         <div class="pb-5">
           <router-view />
@@ -22,23 +22,6 @@ import FooterBar from "./components/footerBar.vue";
 import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   components: { SideBar, Header, FooterBar },
-  setup() {
-    const height = ref(window.innerHeight);
-
-    const updateHeight = () => {
-      height.value = window.innerHeight;
-    };
-
-    onMounted(() => {
-      window.addEventListener("resize", updateHeight);
-    });
-
-    onUnmounted(() => {
-      window.removeEventListener("resize", updateHeight);
-    });
-
-    return { height };
-  },
 });
 </script>
 <style>
