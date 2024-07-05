@@ -1,4 +1,83 @@
 {
+  "cropArr": [
+    {
+      "img": "walnut.png",
+      "title": "Walnut (Juglans Regia)",
+      "location": "Shalva Nutsubidze St, T'b...",
+      "unit": "45000 Sq m",
+      "id": "1"
+    },
+    {
+      "img": "strawberry.png",
+      "title": "Strawberry (Fragaria)",
+      "location": "Saguramo, Georgia",
+      "unit": "62 Acres",
+      "id": "2"
+    },
+    {
+      "img": "strawberry.png",
+      "title": "Strawberry (Fragaria)",
+      "location": "Tbilisi, Georgia",
+      "unit": "120 Acres",
+      "id": "3"
+    },
+    {
+      "img": "watermelon.png",
+      "title": "Watermelon (Citrullus ...",
+      "location": "Alexandre Kazbegi St, T'b...",
+      "unit": "45000 Sq m",
+      "id": "4"
+    },
+    {
+      "img": "sage.png",
+      "title": "Sage (Salvia)",
+      "location": "Georgia",
+      "unit": "240 HA",
+      "id": "5"
+    },
+    {
+      "img": "walnut.png",
+      "title": "Walnut (Juglans Regia)",
+      "location": "Shalva Nutsubidze St, T'b...",
+      "unit": "45000 Sq m",
+      "id": "6"
+    },
+    {
+      "img": "sage.png",
+      "title": "Sage (Salvia)",
+      "location": "Georgia",
+      "unit": "240 HA",
+      "id": "7"
+    },
+    {
+      "img": "strawberry.png",
+      "title": "Strawberry (Fragaria)",
+      "location": "Saguramo, Georgia",
+      "unit": "62 Acres",
+      "id": "8"
+    },
+    {
+      "img": "strawberry.png",
+      "title": "Strawberry (Fragaria)",
+      "location": "Tbilisi, Georgia",
+      "unit": "120 Acres",
+      "id": "9"
+    },
+    {
+      "img": "watermelon.png",
+      "title": "Watermelon (Citrullus ...",
+      "location": "Alexandre Kazbegi St, T'b...",
+      "unit": "45000 Sq m",
+      "id": "10"
+    },
+    {
+      "img": "sage.png",
+      "title": "Sage (Salvia)",
+      "location": "Georgia",
+      "unit": "240 HA",
+      "id": "11"
+    }
+  ],
   "croprequests": [
     {
       "id": "#120932",

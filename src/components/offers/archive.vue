@@ -1,7 +1,7 @@
 <template>
   <div
     :class="`h-[${height}]`"
-    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px] md:mb-5 pb-5 md:mt-[50px] md:mr-4 rounded-[12px]"
+    class="bg-white shadow-[rgba(0,0,0,0.05)_0_1px_5px_1px]  pb-5 md:mt-[50px] md:mr-4 rounded-[12px]"
   >
     <div class="flex justify-end w-full items-center gap-2 p-4">
       <img
