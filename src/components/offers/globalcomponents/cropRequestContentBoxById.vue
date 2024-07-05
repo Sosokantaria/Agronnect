@@ -28,7 +28,7 @@
         <span class="ml-3 text-base text-gray-dark">{{ subtitle }}</span>
       </div>
     </div>
-    <div v-if="isShow">
+    <div v-if="isShow" class="md:px-[42px] md:py-[11px]">
       <singleRequestContainer
         v-for="(req, index) in reqArr"
         :key="index"

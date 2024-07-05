@@ -20,7 +20,7 @@
       class="flex justify-center tablet:justify-between flex-col tablet:flex-row w-[50%] p-2 tablet:w-[75%]"
     >
       <div
-        class="flex justify-between flex-col tablet:flex-row w-[100%] tablet:w-[70%]"
+        class="flex justify-between flex-col tablet:flex-row w-[100%] tablet:w-[70%] md:pl-[21px]"
       >
         <div class="flex justify-between tablet:pr-6 w-[100%] tablet:w-[70%]">
           <div class="flex items-center tablet:w-[70%]">
