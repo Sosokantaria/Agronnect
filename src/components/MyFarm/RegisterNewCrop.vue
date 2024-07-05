@@ -32,8 +32,6 @@ export default {
     const handleAddCrop = () => {
       emit("handleAddCrop", "selection");
     };
-
-    console.log(window.innerHeight);
     return { handleAddCrop };
   },
 };

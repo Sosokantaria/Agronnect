@@ -11,6 +11,7 @@
       <div class="col-span-4 tablet:col-span-2 relative">
         <select
           v-model="crop"
+          ref="cropInput"
           class="w-full border-gray-dark rounded-[8px] bg-white h-[42px] border-[1px] text-gray-dark px-4"
         >
           <option v-for="option in cropOptions" :key="option">
@@ -18,6 +19,7 @@
           </option>
         </select>
         <span
+         @click="focusInput('cropInput')"
           :class="{ filled: crop }"
           class="absolute left-[20px] top-[21%] px-2 bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Crop</span
@@ -26,9 +28,11 @@
       <div class="col-span-2 tablet:col-span-1 relative">
         <input
           v-model="area"
+            ref="areaInput"
           class="border-gray-dark rounded-[8px] bg-white h-[42px] border-[1px] text-gray-dark w-full px-4"
         />
         <span
+         @click="focusInput('areaInput')"
           :class="{ filled: area }"
           class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Area</span
@@ -37,6 +41,7 @@
       <div class="col-span-2 tablet:col-span-1 relative">
         <select
           v-model="unit"
+           ref="unitInput"
           class="w-full border-gray-dark rounded-[8px] bg-white h-[42px] border-[1px] text-gray-dark px-4"
         >
           <option v-for="option in unitOptions" :key="option">
@@ -44,6 +49,7 @@
           </option>
         </select>
         <span
+          @click="focusInput('unitInput')"
           :class="{ filled: unit }"
           class="absolute left-[20px] top-[-10px] px-2 bg-white text-gray-dark text-sm font-[400] leading-[18.75px]"
           >unit</span
@@ -52,9 +58,11 @@
       <div class="col-span-4 relative">
         <input
           v-model="variety"
+          ref="varietyInput"
           class="border-gray-dark rounded-[8px] bg-white h-[42px] border-[1px] text-gray-dark w-full px-4"
         />
         <span
+          @click="focusInput('varietyInput')"
           :class="{ filled: variety }"
           class="absolute left-[20px] px-2 top-[21%] bg-white text-gray-dark text-xl font-[400] leading-[18.75px]"
           >Variety (optional)</span
@@ -75,30 +83,45 @@
   </div>
 </template>
 
-<script>
-import { ref, reactive } from "vue";
-export default {
-  setup() {
-    const cropOptions = reactive([
-      "",
-      "option_1",
-      "option_2",
-      "option_3",
-      "option_4",
-      "option_5",
-      "option_6",
-      "option_7",
-    ]);
-    const unitOptions = reactive(["HA", "m2", "Acres"]);
-    const crop = ref("");
-    const area = ref("");
-    const unit = ref("");
-    const variety = ref("");
+<script setup>
+import { ref, } from 'vue';
 
-    return { cropOptions, unitOptions, crop, area, unit, variety };
-  },
+const cropOptions = [
+  "",
+  "option_1",
+  "option_2",
+  "option_3",
+  "option_4",
+  "option_5",
+  "option_6",
+  "option_7",
+];
+const unitOptions = ["HA", "m2", "Acres"];
+const crop = ref("");
+const area = ref("");
+const unit = ref("");
+const variety = ref("");
+
+
+
+const cropInput = ref(null);
+const areaInput = ref(null);
+const unitInput = ref(null);
+const varietyInput = ref(null);
+
+const focusInput = (inputRef) => {
+  if (inputRef === 'cropInput') {
+    cropInput.value.focus();
+  } else if (inputRef === 'areaInput') {
+    areaInput.value.focus();
+  } else if (inputRef === 'unitInput') {
+    unitInput.value.focus();
+  } else if (inputRef === 'varietyInput') {
+    varietyInput.value.focus();
+  }
 };
 </script>
+
 
 <style>
 input:focus + span,
