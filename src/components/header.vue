@@ -65,11 +65,12 @@
     <img src="../assets/icons/chevron-right.svg" />
     <span
       v-if="$route.name !== 'Offers'"
-      class="hidden font-robotoSlab text-black laptop:flex text-5xl font-[700] leading-[39.57px]"
+      class="text-5xl font-[700] leading-[39.57px] font-robotoSlab"
       >{{ $route.name }}</span
-    ><span
+    >
+    <span
       v-else-if="$route.name === 'Offers'"
-      class="hidden font-robotoSlab text-black laptop:flex text-5xl font-[700] leading-[39.57px]"
+      class="text-5xl font-[700] leading-[39.57px] font-robotoSlab"
       >Offers from Specialists</span
     >
   </div>
