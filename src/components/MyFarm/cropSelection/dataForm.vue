@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:max-w-[470px]   min-h-[218px] px-[20px] md:px-0 md:mx-auto  tablet:px-0 text-center pt-[60px] md:pt-0 md:py-[262px]  flex flex-col justify-center items-center gap-[20px]"
+    class="max-w-[350px] md:max-w-[470px]   min-h-[218px] px-[20px] md:px-0 mx-auto  tablet:px-0 text-center pt-[60px]  md:pt-[265px]  flex flex-col justify-center items-center gap-[20px]"
   >
     <h2 class="font-[700] max-w-[235px] tablet:max-w-[447px] text-3xl leading-[28px]">
       Let's select the crop you cultivate on your farm

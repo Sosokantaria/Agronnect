@@ -3,16 +3,16 @@
     class="bg-white shadow-[rgba(0,0,0,0.3)_0px_0px_4px_0px] pb-5 relative mt-[70px] rounded-[12px]"
   >
     <TopContent />
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col h-full ">
       <DataForm />
-      <div class="flex flex-col mt-[197px] md:mt-0 gap-4 items-center justify-end">
+      <div class="flex flex-col mt-[197px]  gap-4 items-center justify-end">
          <p
               class=" md:hidden font-[400] text-center w-[350px] text-xl leading-[18.75px] text-gray-dark  "
             >
               Please consider, you can add or edit any information later.
             </p>
         <div
-          class="flex justify-between w-full px-[30px] "
+          class="flex justify-between w-full px-[20px] "
         >
           <button
             @click="handleClickPrev"
